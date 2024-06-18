@@ -2,7 +2,8 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import Hero from "./hero";
-
+import Image from "next/image";
+import logo from "../assets/secondary.png";
 export default function App() {
   const comp = useRef(null);
 
@@ -41,18 +42,19 @@ export default function App() {
     <div className="relative" ref={comp}>
       <div
         id="intro-slider"
-        className="h-screen p-10 bg-green-900 absolute top-0 left-0 font-spaceGrotesk z-10 w-full flex flex-col justify-center items-center gap-10 tracking-tight ">
-        <h1 className="text-7xl" id="title-1">
+        className="h-screen p-10 bg-primary absolute top-0 left-0 font-spaceGrotesk z-10 w-full flex flex-col justify-center items-center gap-10 tracking-tight ">
+        <h1 className="text-7xl text-secondary" id="title-1">
           Aureliara
+        </h1> 
+        
+       <h1 className="text-4xl text-secondary" id="title-2">
+          Cosmitcs
         </h1>
-        {/* <h1 className="text-7xl" id="title-2">
-          Health
-        </h1>
-        <h1 className="text-7xl" id="title-3">
+        {/* <h1 className="text-7xl" id="title-3">
           Glow
-        </h1> */}
+        </h1>  */}
       </div>
-      <div className="h-screen  bg-red-950  place-items-center">
+      <div className="h-screen  bg-secondary  place-items-center">
         <Hero />
       </div>
     </div>
