@@ -1,7 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import Header from "./header";
+import Navbar from "./navbar";
 export default function Hero() {
   return (
-    <div id='welcome' className=' text-7xl font-bold text-gray-100'>home</div>
-  )
+    <>
+      {/* <Header /> */}
+
+      <div id="welcome" className=" ">
+        <Navbar />
+      </div>
+    </>
+  );
 }
