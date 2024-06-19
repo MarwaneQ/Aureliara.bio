@@ -49,8 +49,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-transparent text-primary z-50 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-7 w-full bg-transparent text-primary z-50 ">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="text-2xl font-bold ">
