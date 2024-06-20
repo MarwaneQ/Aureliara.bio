@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import landing from "../assets/landing.jpeg";
 import Navbar from "./navbar"; // Assuming you have a Navbar component
-
+import { FlipWords } from "./flip-words"; // Assuming you have a FlipWords component
+import { HeroHighlight, Highlight } from "./hero-highlight";
 export default function Hero() {
   return (
     <>
@@ -15,16 +16,17 @@ export default function Hero() {
           className="object-cover w-full h-full"
         />
         <div
-          className="absolute top-0 left-0 w-full h-full flex items-center justify-start p-8"
+          className="absolute top-0 left-16 w-full h-full flex items-center justify-start p-8"
           id="Welcome">
-          <div className="text-left text-primary max-w-lg">
-            <h1 className="text-4xl font-bold mb-4">Welcome to Our Site</h1>
-            <p className="text-lg mb-4">
-              Discover the best products and services to enhance your lifestyle.
-            </p>
-            <a href="#products" className="text-lg font-semibold underline">
-              Explore Now
-            </a>
+          <div className=" text-white  felx flex-row">
+            <h1 className="text-4xl font-bold mb-4">
+              with Aureliara rediscover{" "}
+              
+            </h1>
+            <FlipWords
+                words={["Welcome", "Hola", "Bonjour", "Ciao"]}
+                className="text-black"
+              />
           </div>
         </div>
       </div>
