@@ -60,7 +60,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline text-xl space-x-16">
               <a href="#home" className="font-bold">
                 Home
               </a>

@@ -22,6 +22,18 @@ const config: Config = {
         primary: "#3c4229",
         secondary: "#e3dfdd",
       },
+      fontFamily: {
+        norms: ["norms", "sans-serif"],
+      },
+      keyframes: {
+        "scroll-dot": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(10px)" },
+        },
+      },
+      animation: {
+        "scroll-dot": "scroll-dot 1s infinite",
+      },
     },
   },
   plugins: [
@@ -45,7 +57,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });

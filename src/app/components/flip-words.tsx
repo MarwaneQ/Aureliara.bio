@@ -7,10 +7,12 @@ export const FlipWords = ({
   words,
   duration = 3000,
   className,
+  id,
 }: {
   words: string[];
   duration?: number;
   className?: string;
+  id?: string;
 }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
@@ -63,6 +65,7 @@ export const FlipWords = ({
           className
         )}
         key={currentWord}
+        id={id}
       >
         {currentWord.split("").map((letter, index) => (
           <motion.span
@@ -74,6 +77,7 @@ export const FlipWords = ({
               duration: 0.4,
             }}
             className="inline-block"
+            
           >
             {letter}
           </motion.span>

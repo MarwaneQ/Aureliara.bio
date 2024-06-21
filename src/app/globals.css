@@ -1,13 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "norms", sans-serif;
 }
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "norms";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Norms-Regular.otf) format("otf");
+  }
+  @font-face {
+    font-family: "norms";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Norms-Bold.otf) format("otf");
+  }
+  @font-face {
+    font-family: "norms";
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/Norms-Medium.otf) format("otf");
+  }
+  @font-face {
+    font-family: "norms";
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Norms-Light.otf) format("otf");
   }
 }
