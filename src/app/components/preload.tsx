@@ -4,6 +4,7 @@ import gsap from "gsap";
 import Hero from "./hero";
 import Image from "next/image";
 import logo from "../assets/secondary.png";
+import Product from "./product";
 export default function App() {
   const comp = useRef(null);
 
@@ -42,7 +43,7 @@ export default function App() {
     <div className="relative" ref={comp}>
       <div
         id="intro-slider"
-        className="h-screen p-10 bg-primary absolute top-0 left-0 font-spaceGrotesk z-10 w-full flex flex-col justify-center items-center gap-10 tracking-tight ">
+        className="h-screen p-10 bg-primary absolute top-0 left-0  z-10 w-full flex flex-col justify-center items-center gap-10 tracking-tight ">
         <h1 className="text-7xl text-secondary" id="title-1">
           Aureliara
         </h1> 
@@ -54,8 +55,9 @@ export default function App() {
           Glow
         </h1>  */}
       </div>
-      <div className="h-screen  bg-secondary  place-items-center">
+      <div className="  ">
         <Hero />
+        <Product />
       </div>
     </div>
   );

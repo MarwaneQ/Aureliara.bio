@@ -33,7 +33,7 @@ export default function Hero() {
         </div> */}
         <div className="absolute flex lg:justify-start md:justify-start justify-center items-center w-full h-full">
           <div className="h-full flex items-center flex-col justify-center ">
-            <h1 className="md:text-6xl lg:text-7xl text-2xl ml-2 font-norms md:ml-12 md:leading-tight leading-normal lg:leading-tight text-green-950">
+            <h1 className="md:text-6xl lg:text-7xl text-2xl ml-2 font-poppins md:ml-12 md:leading-tight leading-normal lg:leading-tight text-green-950">
               Glowing expert for your <br /> beautiful healthy skin
             </h1>
           </div>

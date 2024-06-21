@@ -23,7 +23,7 @@ const config: Config = {
         secondary: "#e3dfdd",
       },
       fontFamily: {
-        norms: ["norms", "sans-serif"],
+        poppins: ["poppins", "sans-serif"],
       },
       keyframes: {
         "scroll-dot": {
