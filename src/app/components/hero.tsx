@@ -4,12 +4,12 @@ import landing from "../assets/landing.jpeg";
 import Navbar from "./navbar";
 import { FlipWords } from "./flip-words";
 import ScrollDownButton from "./scrolldownbutton";
+import Container from "./container";
 export default function Hero() {
   return (
     <>
       <div className=" relative flex w-full h-[100vh]" id="Welcome">
         <Navbar />
-
         <Image
           src={landing}
           layout="fill"
@@ -39,7 +39,9 @@ export default function Hero() {
           </div>
         </div>
         <ScrollDownButton />
+        
       </div>
+      {/* <Container /> */}
     </>
   );
 }
