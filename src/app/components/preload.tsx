@@ -5,6 +5,7 @@ import Hero from "./hero";
 import Image from "next/image";
 import logo from "../assets/secondary.png";
 import Product from "./product";
+import About from "./about";
 export default function App() {
   const comp = useRef(null);
 
@@ -58,6 +59,7 @@ export default function App() {
       <div className="  ">
         <Hero />
         <Product />
+        <About />
       </div>
       
     </div>
