@@ -56,11 +56,9 @@ export default function App() {
           Glow
         </h1>  */}
       </div>
-      <div className="  ">
         <Hero />
         <Product />
-        <About />
-      </div>
+         <About /> 
       
     </div>
   );

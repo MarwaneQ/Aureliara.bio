@@ -61,13 +61,13 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline text-xl space-x-16">
-              <a href="#home" className="font-bold">
+              <a href="home" className="font-bold">
                 Home
               </a>
-              <a href="#products" className="font-bold">
+              <a href="products" className="font-bold">
                 Products
               </a>
-              <a href="#about" className="font-bold">
+              <a href="about" className="font-bold">
                 About
               </a>
               {/* <a href="#contact" className="font-bold">

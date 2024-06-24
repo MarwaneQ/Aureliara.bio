@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Container from "./container";
 import { CardBody, CardContainer } from "./3d-card";
-import product from "../assets/product.jpg";
+import product from "../assets/prd-AI.jpeg";
 export default function Product() {
   return (
     <div id="product">
@@ -12,7 +12,7 @@ export default function Product() {
           <Image
             src={product}
             alt="product"
-            className=" w-full h-full rounded-2xl "
+            className=" object-cover h-full rounded-2xl "
           />
           <button className="bg-transparent  hover:bg-primary text-primary hover:text-secondary border border-green-800 rounded-full m-11 px-12 py-2">
             <a href="/">Buy now</a>
@@ -25,34 +25,36 @@ export default function Product() {
           <h4 className="p-3 md:text-xl text-green-800">
             Niacinamide 10% & Zinc
           </h4>
-          <p className="md:w-[45rem] mb-2">
-            Experience the transformative power of our Anti-Imperfections
-            Niacinamide 10% & Zinc serum, meticulously crafted to target and
-            reduce the appearance of blemishes and imperfections. This advanced
-            formula harnesses the synergistic effects of Niacinamide (Vitamin
-            B3) and Zinc to promote a clearer, smoother, and more radiant
-            complexion.
-          </p>
-          
-          <p className="md:w-[45rem] ">
-            - Blemish Control: Niacinamide at a potent 10% concentration helps
-            to visibly reduce the appearance of blemishes and skin congestion,
-            ensuring a clearer complexion.
-            <br />
-            - Oil Regulation: Zinc works in harmony with Niacinamide to regulate
-            sebum production, minimizing excess oil and preventing future
-            breakouts.
-            <br />
-            - Pore Refinement: Effectively reduces the appearance of enlarged
-            pores, creating a smoother skin texture.
-            <br />
-            - Even Skin Tone: Niacinamide is known for its ability to improve
-            skin tone and texture, diminishing the appearance of dark spots and
-            redness.
-            <br />- Anti-Inflammatory: Both Niacinamide and Zinc possess
-            anti-inflammatory properties that soothe irritated skin, making this
-            serum ideal for sensitive and acne-prone skin.
-          </p>
+          <div className="flex justify-start flex-col">
+            <p className="md:w-[45rem] mb-2">
+              Experience the transformative power of our Anti-Imperfections
+              Niacinamide 10% & Zinc serum, meticulously crafted to target and
+              reduce the appearance of blemishes and imperfections. This
+              advanced formula harnesses the synergistic effects of Niacinamide
+              (Vitamin B3) and Zinc to promote a clearer, smoother, and more
+              radiant complexion.
+            </p>
+
+            <p className="md:w-[45rem] ">
+              - Blemish Control: Niacinamide at a potent 10% concentration helps
+              to visibly reduce the appearance of blemishes and skin congestion,
+              ensuring a clearer complexion.
+              <br />
+              - Oil Regulation: Zinc works in harmony with Niacinamide to
+              regulate sebum production, minimizing excess oil and preventing
+              future breakouts.
+              <br />
+              - Pore Refinement: Effectively reduces the appearance of enlarged
+              pores, creating a smoother skin texture.
+              <br />
+              - Even Skin Tone: Niacinamide is known for its ability to improve
+              skin tone and texture, diminishing the appearance of dark spots
+              and redness.
+              <br />- Anti-Inflammatory: Both Niacinamide and Zinc possess
+              anti-inflammatory properties that soothe irritated skin, making
+              this serum ideal for sensitive and acne-prone skin.
+            </p>
+          </div>
         </div>
       </div>
     </div>
