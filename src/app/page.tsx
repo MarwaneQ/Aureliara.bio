@@ -5,10 +5,10 @@ import Product from "./components/product";
 import About from "./components/about";
 export default function Home() {
   return (
-    <main>
+    <>
         <Preload />
         <Product />
         <About /> 
-    </main>
+    </>
   );
 }

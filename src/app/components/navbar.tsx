@@ -4,11 +4,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import gsap from "gsap";
 import Image from "next/image";
 import logo from "../assets/logo2.png";
+
+
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const circleRef = useRef(null);
-  const menuItemsRef = useRef([]);
-
+  const menuItemsRef = useRef<(HTMLElement | null)[]>([]);
   useEffect(() => {
     if (isOpen) {
       gsap.to(circleRef.current, {
@@ -103,7 +105,11 @@ const Navbar = () => {
               key={item}
               href={`#${item.toLowerCase()}`}
               className="block px-3 py-2 rounded-md text-base font-medium text-secondary hover:text-gray-400 transition duration-200"
-              ref={(el) => (menuItemsRef.current[index] = el)}>
+              ref={(el: HTMLElement | null) => { 
+                if (el) {
+                  menuItemsRef.current[index] = el; 
+                }
+              }}>
               {item}
             </a>
           ))}

@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Container from "./container";
-import { CardBody, CardContainer } from "./3d-card";
 import product from "../assets/prd-AI.jpeg";
 export default function Product() {
   return (
-    <section id="product" className="h-[100dvh] mb-96">
+    <section id="product" className="h-[100dvh] mb-[45rem] md:mb-0">
       <Container text={"Our Product"} />
-      <div className="w-full h-[100dvh] px-2 py-10 flex items-center justify-evenly bg-white md:flex-row lg:flex-row flex-col">
+      <div className="w-full  px-2 items-center mt-14 py-10 flex justify-center bg-white md:flex-row lg:flex-row flex-col">
         <div className=" w-[20rem] h-[28rem]   flex items-center flex-col  border-r-[12px] border-b-[12px] border-[#FEF2E4]	rounded-2xl">
           <Image
             src={product}
