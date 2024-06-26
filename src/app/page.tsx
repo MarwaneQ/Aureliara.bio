@@ -8,7 +8,7 @@ export default function Home() {
     <main>
         <Preload />
         <Product />
-         <About /> 
+        <About /> 
     </main>
   );
 }
