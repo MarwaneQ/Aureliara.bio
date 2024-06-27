@@ -17,7 +17,7 @@ export default function Product() {
             <a href="/">Buy now</a>
           </button>
         </div>
-        <div className="flex flex-col items-center h-full justify-center p-5 mt-32 md:mt-0  ">
+        <div className="flex flex-col items-center h-full justify-center p-5 mt-32 md:mt-0 text-center md:text-start">
           <h1 className="font-bold md:text-5xl text-3xl text-primary ">
             Anti-Imperfections
           </h1>

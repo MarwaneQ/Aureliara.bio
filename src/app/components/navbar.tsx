@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import gsap from "gsap";
 import Image from "next/image";
 import logo from "../assets/logo2.png";
-
+import logo2 from "../assets/landing2.png";
 
 
 const Navbar = () => {
@@ -52,13 +52,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" flex justify-center top-7 w-full bg-transparent text-primary z-50 ">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16  md:w-[60rem]">
+    <nav className="  top-7 w-full bg-transparent text-primary z-40 h-16 px-2 ">
+      <div className="  justify-center px-4 sm:px-6 lg:px-8">
+        <div className="flex w-full items-center justify-between h-16  md:w-[60rem]">
           <div className="flex items-center">
             <div className="text-2xl font-bold ">
               <a href="/">
-                <Image src={logo} className="w-20 h-20 p-[6px]" alt="logo" />
+                <Image src={logo} className="w-20 h-20 py-1" alt="logo" />
               </a>
             </div>
           </div>

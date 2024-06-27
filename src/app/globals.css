@@ -11,6 +11,36 @@
   .text-balance {
     text-wrap: balance;
   }
+  @keyframes moveUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes moveUpBtn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-moveUp {
+    animation: moveUp 1s ease-out;
+  }
+  .animate-moveUp-btn {
+    animation: moveUpBtn 1.5s ease-out;
+  }
 }
 @layer base {
   @font-face {
