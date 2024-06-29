@@ -1,11 +1,10 @@
-"use client"
+"use client";
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import gsap from "gsap";
 import Image from "next/image";
 import logo from "../assets/logo3.png";
 import logo2 from "../assets/landing2.png";
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +24,7 @@ const Navbar = () => {
           opacity: 1,
           scale: 1,
           stagger: 0.1,
-          duration: 0.5,
+          duration: 0.3,
           ease: "power2.out",
           delay: 0.3,
         }
@@ -33,12 +32,12 @@ const Navbar = () => {
     } else {
       gsap.to(menuItemsRef.current, {
         opacity: 0,
-        scale: 0.8,
-        duration: 0.3,
+        scale: 0,
+        duration: 0,
         ease: "power2.inOut",
         onComplete: () => {
           gsap.to(circleRef.current, {
-            duration: 0.8,
+            duration: 0,
             scale: 0,
             ease: "power2.inOut",
           });
@@ -105,9 +104,9 @@ const Navbar = () => {
               key={item}
               href={`#${item.toLowerCase()}`}
               className="block px-3 py-2 rounded-md text-base font-medium text-secondary hover:text-gray-400 transition duration-200"
-              ref={(el: HTMLElement | null) => { 
+              ref={(el: HTMLElement | null) => {
                 if (el) {
-                  menuItemsRef.current[index] = el; 
+                  menuItemsRef.current[index] = el;
                 }
               }}>
               {item}

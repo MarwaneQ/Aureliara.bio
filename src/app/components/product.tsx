@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Container from "./container";
 import product from "../assets/prd-AI.jpeg";
-import MagneticButton from "./magnaticButton";
 export default function Product() {
   return (
     <section id="product" className="h-[100dvh] mb-[45rem] md:mb-0">
