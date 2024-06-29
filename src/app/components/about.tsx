@@ -27,22 +27,6 @@ export default function About() {
               science-backed skincare solutions that harmonize with nature’s
               finest ingredients.
               <br />
-              At Aureliara, we harness the power of nature to bring out your
-              skin’s natural elegance. Each product is crafted with carefully
-              selected botanical extracts and organic ingredients, ensuring that
-              your skin receives the purest, most effective care. We combine the
-              wisdom of nature with cutting-edge scientific research. Our
-              formulations are meticulously developed by skincare experts to
-              provide visible results, enhancing your skin’s health and
-              vitality. Our commitment to sustainability and eco-friendly
-              practices is at the heart of everything we do. Our packaging is
-              designed to be recyclable, and we strive to minimize our
-              environmental footprint at every step of our production process.
-              Aureliara celebrates all skin types and tones. Our diverse range
-              of products is designed to meet the unique needs of every
-              individual, promoting inclusivity and confidence in your natural
-              beauty. Thank you for choosing Aureliara. Embrace the radiance
-              within and let your natural beauty shine.
             </p>
           </div>
         </div>

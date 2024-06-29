@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Container from "./container";
 import product from "../assets/prd-AI.jpeg";
+import MagneticButton from "./magnaticButton";
 export default function Product() {
   return (
     <section id="product" className="h-[100dvh] mb-[45rem] md:mb-0">
@@ -13,7 +14,7 @@ export default function Product() {
             alt="product"
             className=" object-cover h-full rounded-2xl "
           />
-          <button className="bg-transparent  hover:bg-primary text-primary hover:text-secondary border border-green-800 rounded-full m-11 px-12 py-2">
+          <button className="bg-transparent transition hover:bg-primary text-primary hover:text-secondary border border-green-800 rounded-full m-11 px-12 py-2">
             <a href="/">Buy now</a>
           </button>
         </div>
