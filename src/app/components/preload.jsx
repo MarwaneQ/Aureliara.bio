@@ -5,7 +5,8 @@ import Image from "next/image";
 import landing from "../assets/landing.jpeg";
 import aur from "../assets/secondary.png";
 import Navbar from "./navbar";
-import ScrollDownButton from "./scrolldownbutton";
+import Container from "./scrollingText";
+import ScrollingText from "./scrollingText";
 
 export default function App() {
   const comp = useRef(null);
@@ -15,15 +16,14 @@ export default function App() {
   useLayoutEffect(() => {
     let tl = gsap.timeline({
       onComplete: () => {
-        setAnimationComplete(true); // Update state on animation complete
-        // Fade in the hero container
+        setAnimationComplete(true);
+
         gsap.fromTo(
           heroContainerRef.current,
           { opacity: 0 },
           { opacity: 1, duration: 1.5 }
         );
 
-        // Animate the h1 element
         gsap.fromTo(
           heroContainerRef.current.querySelector(".animate-moveUp"),
           { y: "100%", opacity: 0 },
@@ -57,7 +57,7 @@ export default function App() {
         duration: 0.5,
       });
 
-    return () => tl.revert(); // Revert the timeline on component unmount
+    return () => tl.revert();
   }, []);
 
   return (
@@ -65,14 +65,20 @@ export default function App() {
       <div
         id="intro-slider"
         className="h-screen p-10 bg-primary absolute top-0 left-0  z-10 w-full flex flex-col justify-center items-center gap-10 tracking-tight ">
-        <Image src={aur} alt="aur" className="w-96" id="title-1" priority={true} />
+        <Image
+          src={aur}
+          alt="aur"
+          className="w-96"
+          id="title-1"
+          priority={true}
+        />
       </div>
       <div
-        className="h-screen flex bg-secondary justify-center place-items-center"
+        className="h-[100dvh] flex bg-secondary justify-center place-items-center"
         ref={heroContainerRef}>
         {animationComplete && (
           <div
-            className="relative flex w-full h-[100vh] flex-wrap"
+            className="relative flex w-full h-[100dvh] flex-wrap"
             id="Welcome">
             <Navbar />
             <Image
@@ -80,7 +86,6 @@ export default function App() {
               layout="fill"
               alt="landing"
               className="object-cover h-full"
-              
             />
             <div className="absolute flex lg:justify-start md:justify-start justify-start items-start w-full h-full">
               <div
@@ -102,6 +107,8 @@ export default function App() {
           </div>
         )}
       </div>
+      <ScrollingText />
+        
     </section>
   );
 }
