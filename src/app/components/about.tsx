@@ -5,10 +5,10 @@ import aboutImage from "../assets/about-img.jpg";
 import logo2 from "../assets/landing2.png";
 export default function About() {
   return (
-    <div id="about" className="">
-      <Container />
+    <div id="about" className="mt-32">
       <div className="w-full  px-2  flex items-center justify-evenly bg-white md:flex-row lg:flex-row flex-col">
         <div className="flex flex-col items-center  justify-center p-5  md:mt-0 text-center md:text-start ">
+      <h3>About</h3>
           <Image
             src={logo2}
             layout=""
@@ -30,7 +30,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className=" w-[20rem] h-[28rem]   flex items-center flex-col  border-r-[12px] border-b-[12px] border-[#FEF2E4]	rounded-2xl">
+        <div className=" w-[20rem] h-[28rem] flex items-center flex-col  border-r-[12px] border-b-[12px] border-[#FEF2E4]	rounded-2xl">
           <Image
             src={aboutImage}
             alt="product"

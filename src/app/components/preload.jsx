@@ -5,10 +5,8 @@ import Image from "next/image";
 import landing from "../assets/landing.jpeg";
 import aur from "../assets/secondary.png";
 import Navbar from "./navbar";
-import Container from "./scrollingText";
-import ScrollingText from "./scrollingText";
 
-export default function App() {
+export default function Preload() {
   const comp = useRef(null);
   const [animationComplete, setAnimationComplete] = useState(false);
   const heroContainerRef = useRef(null);
@@ -107,7 +105,7 @@ export default function App() {
           </div>
         )}
       </div>
-      <ScrollingText />
+      
         
     </section>
   );

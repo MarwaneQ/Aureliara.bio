@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/preload.jsx", "src/app/components/about.tsx", "src/app/components/container.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/preload.jsx", "src/app/components/about.tsx", "src/app/components/container.tsx", "src/app/components/scrollingText.jsx"],
   "exclude": ["node_modules"]
 }
