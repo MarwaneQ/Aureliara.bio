@@ -5,7 +5,7 @@ import aboutImage from "../assets/about-img.jpg";
 import logo2 from "../assets/landing2.png";
 export default function About() {
   return (
-    <div id="about" className="mt-40 mb-32">
+    <div id="about" className="mt-[55rem] md:mt-40 mb-32">
       <div className="w-full  px-2  flex items-center justify-evenly bg-white md:flex-row lg:flex-row flex-col">
         <div className="flex flex-col items-center  justify-center p-5  md:mt-0 text-center md:text-start ">
           <h3>About</h3>
