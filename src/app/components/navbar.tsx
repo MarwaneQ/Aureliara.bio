@@ -4,7 +4,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import gsap from "gsap";
 import Image from "next/image";
 import logo from "../assets/logo3.png";
-import logo2 from "../assets/landing2.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

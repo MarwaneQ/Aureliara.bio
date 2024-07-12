@@ -1,7 +1,6 @@
 import React from "react";
-import Container from "./container";
 import Image from "next/image";
-import aboutImage from "../assets/about-img.jpg";
+import aboutImage from "../assets/aboutImage.jpg";
 import logo2 from "../assets/landing2.png";
 export default function About() {
   return (
