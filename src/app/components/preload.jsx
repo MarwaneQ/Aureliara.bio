@@ -83,7 +83,7 @@ export default function Preload() {
               src={landing}
               layout="fill"
               alt="landing"
-              className="object-cover h-full"
+              className="object-cover"
             />
             <div className="absolute flex lg:justify-start md:justify-start justify-start items-start w-full h-full">
               <div
