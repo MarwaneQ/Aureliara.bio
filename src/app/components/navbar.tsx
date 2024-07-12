@@ -68,7 +68,7 @@ const Navbar = () => {
               <a href="products" className="">
                 Products
               </a>
-              <a href="about" className="font-normal">
+              <a href="about" className="">
                 About
               </a>
               {/* <a href="#contact" className="font-bold">
@@ -100,6 +100,7 @@ const Navbar = () => {
           </button>
           {["Home", "Products", "About"].map((item, index) => (
             <a
+            onClick={toggleMenu}
               key={item}
               href={`#${item.toLowerCase()}`}
               className="block px-3 py-2 rounded-md text-base font-medium text-secondary hover:text-gray-400 transition duration-200"
