@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Aureliara - Premium Skincare Products in Algeria",
+  title: "Aureliara ",
   description:
     "Discover Aureliara, your go-to brand for high-quality skincare products in Algeria. Enhance your beauty routine with our natural and effective solutions. Shop now and experience the best in beauty care.",
 };
