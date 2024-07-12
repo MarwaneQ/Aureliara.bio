@@ -98,9 +98,9 @@ const Navbar = () => {
             className="absolute top-4 right-4 text-gray-400 hover:text-white focus:outline-none">
             <FaTimes size={24} />
           </button>
-          {["Home", "Products", "About"].map((item, index) => (
+          {["Home", "Product", "About"].map((item, index) => (
             <a
-            onClick={toggleMenu}
+              onClick={toggleMenu}
               key={item}
               href={`#${item.toLowerCase()}`}
               className="block px-3 py-2 rounded-md text-base font-medium text-secondary hover:text-gray-400 transition duration-200"
