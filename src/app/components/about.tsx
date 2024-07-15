@@ -4,9 +4,11 @@ import aboutImage from "../assets/aboutImage.jpg";
 import logo2 from "../assets/landing2.png";
 import Container from "./container";
 export default function About() {
+  let text = "Where Science Meets Serenity";
   return (
-    <section id="about" className="h-full md:mb-16 flex flex-col items-center mt-16 mb-16">
-
+    <section
+      id="about"
+      className="h-full md:mb-16 flex flex-col items-center mt-16 mb-16">
       <div className="w-full    px-2  flex items-center justify-evenly bg-white md:flex-row lg:flex-row flex-col">
         <div className="flex flex-col items-center  justify-center p-5  md:mt-0 text-center md:text-start ">
           <h3>About</h3>
@@ -17,7 +19,7 @@ export default function About() {
             className="  h-full w-[15rem] md:w-[23rem] "
           />
           <h4 className="p-3 md:text-xl text-green-800">
-            WE LOVE SKIN, NATURALNESS AND EFFICIENCY.
+            {text.toUpperCase()}
           </h4>
           <div className="flex justify-start flex-col">
             <p className="md:w-[45rem] mb-2">
