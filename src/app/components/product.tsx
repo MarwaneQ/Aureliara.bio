@@ -6,7 +6,7 @@ import ScrollingText from "./scrollingText";
 
 export default function Product() {
   return (
-    <section id="product" className="h-[100dvh] mb-[45rem] md:mb-0">
+    <section id="product" className="h-full  ">
       <ScrollingText />
       <Container text={"Our Product"} />
       <div className="w-full  px-2 items-center mt-14 py-10 flex justify-center bg-white md:flex-row lg:flex-row flex-col">

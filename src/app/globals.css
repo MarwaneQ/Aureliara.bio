@@ -143,10 +143,10 @@ body {
   border-radius: 50%;
   top: -50%;
   left: -25%;
-  transform: translate3d(0,75%,0);
+  transform: translate3d(0, 75%, 0);
 }
 
-.button__text, 
+.button__text,
 .button__text-inner {
   display: flex;
   align-items: center;
