@@ -1,2 +1,2 @@
-## This is a [Brand] project using Next.js & Tailwind & Gsap.
+## This is a Brand project using Next.js & Tailwind & Gsap.
 
