@@ -17,7 +17,9 @@ export default function Product() {
             className=" object-cover h-full rounded-2xl "
           />
           <button className="bg-transparent transition hover:bg-primary text-primary hover:text-secondary border border-green-800 rounded-full m-11 px-12 py-2">
-            <a href="/">Buy now</a>
+            <a href="https://aureliara.store/skincare/anti-imperfections">
+              Buy now
+            </a>
           </button>
         </div>
         <div className="flex flex-col items-center h-full justify-center p-5 mt-32 md:mt-0 text-center md:text-start">
