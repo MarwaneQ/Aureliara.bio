@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Container from "./container";
-import product from "../assets/prd-AI.jpeg";
+import product from "../assets/06-edit.png";
 import ScrollingText from "./scrollingText";
 
 export default function Product() {
@@ -14,7 +14,7 @@ export default function Product() {
           <Image
             src={product}
             alt="product"
-            className=" object-cover h-full rounded-2xl "
+            className=" object-fill h-full rounded-2xl "
           />
           <button className="bg-transparent transition hover:bg-primary text-primary hover:text-secondary border border-green-800 rounded-full m-11 px-12 py-2">
             <a href="https://aureliara.store/skincare/anti-imperfections">
