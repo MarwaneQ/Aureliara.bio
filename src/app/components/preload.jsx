@@ -93,14 +93,12 @@ export default function Preload() {
                   Glowing expert for your <br /> beautiful healthy skin
                 </h1>
                 <div className="md:ml-12 ml-2">
-                  <button
-                    type="button"
-                    ref={heroContainerRef}
-                    className="bg-primary transition  hover:bg-transparent text-secondary hover:text-primary border border-green-800 rounded-full md:my-5 md:mx-2 ml-10 my-6 px-8 py-2 justify-start animate-moveUp-btn">
-                    <a href="https://aureliara.store/skincare/anti-imperfections">
+                    <a
+                      ref={heroContainerRef}
+                      className="bg-primary transition  hover:bg-transparent text-secondary block hover:text-primary border border-green-800 rounded-full md:my-5 md:mx-2 ml-10 my-6 px-8 py-2 justify-start animate-moveUp-btn"
+                      href="https://aureliara.store/skincare/anti-imperfections">
                       Shop now
                     </a>
-                  </button>
                 </div>
               </div>
             </div>
