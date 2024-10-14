@@ -17,7 +17,7 @@ export default function Product() {
             className=" object-fill h-full rounded-2xl "
           />
           
-            <a className="bg-transparent transition hover:bg-primary text-primary hover:text-secondary border border-green-800 rounded-full m-11 px-12 py-2" href="https://aureliara.store/skincare/anti-imperfections">
+            <a className="bg-transparent transition hover:bg-primary text-primary hover:text-secondary border border-green-800 rounded-full m-11 px-12 py-2" href="https://aureliara.store/products/anti-imprefection">
               Buy now
             </a>
           
