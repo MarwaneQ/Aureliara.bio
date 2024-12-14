@@ -96,7 +96,7 @@ export default function Preload() {
                     <a
                       ref={heroContainerRef}
                       className="bg-primary transition  hover:bg-transparent text-secondary block hover:text-primary border border-green-800 rounded-full md:my-5 md:mx-2 ml-10 my-6 px-8 py-2 justify-start animate-moveUp-btn"
-                      href="https://aureliara.store/">
+                      href="products">
                       Shop now
                     </a>
                 </div>

@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
         <Preload />
-        <Product />
-        <About /> 
+        {/* <Product /> */}
+        {/* <About />  */}
         <Footer />
     </>
   );
