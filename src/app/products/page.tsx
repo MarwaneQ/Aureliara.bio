@@ -21,7 +21,7 @@ const products = [
   },
   {
     image: productOne,
-    name: "Acied Slyisalic",
+    name: "Acide Salicylique",
     price: 2100,
   },
   {
